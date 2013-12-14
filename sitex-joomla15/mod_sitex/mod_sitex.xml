@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>sitex</name>
+	<author>Creative Pulse</author>
+	<creationDate>November 2008</creationDate>
+	<copyright>(C)2008 Creative Pulse Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomla.support@creativepulse.eu</authorEmail>
+	<authorUrl>www.creativepulse.eu</authorUrl>
+	<version>1.0</version>
+	<description>Outputs simple text, HTML, JavaScript etc.</description>
+	
+	<files>
+		<filename module="mod_sitex">mod_sitex.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<params>
+		<param name="input" type="textarea" rows="15" cols="65" default="" label="Input" description="Code to be outputed" />
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
